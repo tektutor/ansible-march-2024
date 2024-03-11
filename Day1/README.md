@@ -164,6 +164,31 @@ ssh -i "jegan-new.pem" ubuntu@ec2-54-245-204-120.us-west-2.compute.amazonaws.com
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/e67ed0de-a60f-4c53-9ea4-319957334860)
 
+Find the hostname and ip address of your ec2 instance
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8b524c80-a07c-491b-99ad-07976b0adf01)
+
+You need to install net-tools before you could run ifconfig command
+```
+sudo apt install -y net-tools
+```
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/1717db22-3798-4070-90e2-d32fc1bddbc5)
+
+Now try to find the ip address
+```
+ifconfig
+```
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c9bee850-2b7b-4d3f-9e73-18d7fd493695)
+
+You may exit the ssh connection
+```
+exit
+```
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3834fc00-cfd4-4264-ae48-e6552198d6a2)
+
+Terminate the ec2 instance
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c8be16ce-d0f1-4222-831b-c19ed91fa7c8)
+
+
 ## Lab - Creating an application Load Balancer
 
 We need to create 2 ec2 instances with Ubuntu 22.04 OS
