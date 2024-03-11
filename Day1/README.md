@@ -38,3 +38,31 @@ Examples
   - CentOS - yum or rpm or dnf
   - RHEL - yum or rpm or dnf
   - Kali - apt
+
+## What is Hypervisor?
+- is a software that helps you run multiple OS on the same laptop/desktop/workstation/server
+- multiple OS can be actively running side by side
+- it is a combination of hardware + software technology
+
+## What is a subnet?
+- it is a range of IP address
+- in other words IP block
+- small network
+- IPV4 or IPV6
+- 192.168.49.0/24
+- 24 (CIDR)
+
+- 192.168.0.0/16 - how many IPs are there?
+- a.b.c.d ( 32 bits - 4 bytes )
+- a(8 bits - Octet)
+- b(8 bits - Octet)
+- c(8 bits - Octet)
+- d(8 bits - Octet)
+
+192.168.49.0
+192.168.49.1
+...
+192.168.49.255
+
+192.168.49.108
+192.168.49.105
