@@ -93,3 +93,10 @@ sudo apt update
 sudo apt install -y nginx
 ```
 
+Repeat this in the second ec2 instance as well
+```
+ssh -i "jegan-new.pem" ubuntu@ec2-34-218-232-228.us-west-2.compute.amazonaws.com
+sudo apt update
+sudo apt install -y nginx
+```
+
