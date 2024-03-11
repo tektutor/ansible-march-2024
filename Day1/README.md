@@ -66,3 +66,14 @@ Examples
 
 192.168.49.108
 192.168.49.105
+
+
+## Connecting to the ec2 instance from your lab machine using ssh
+```
+cd ~/Downloads
+chmod 400 ./jegan-new.pem
+ssh -i ./jegan-new.pem ubuntu@ec2-52-12-170-75.us-west-2.compute.amazonaws.com
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8e53e395-96c4-4478-a93e-cefd7fe7316c)
