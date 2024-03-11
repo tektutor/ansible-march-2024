@@ -1,40 +1,40 @@
 # Day 1
 
-## On Premise Server
+## Info - On Premise Server
 - Servers owned by your organization
 - also referred as On-Prem servers
 
-## Data Center
+## Info - Data Center
 - a physical facility that organizations uses to host their critcal applications and data
 - key components of a data center design include routers, switches, firewalls, storage systems, servers
   
-## Public Cloud
+## Info - Public Cloud
 - AWS, GCP, Azure, Digital Ocean, etc
 - Servers that you can rent from Amazon, Google, Microsoft online
 
-## What is Static IP?
+## Info - What is Static IP?
 - it won't change even if the machine is rebooted
 - it could be private/public
 
-## What is Dynamic IP?
+## Info - What is Dynamic IP?
 - it will change everytime the machine is rebooted
 - it could be private/public
 
-## What is Private IP?
+## Info - What is Private IP?
 - the IP Address is accessible only within that machine/same network
 
-## What is Public IP?
+## Info - What is Public IP?
 - the IP address is accessible from Internet
 - this could be static/dynamic
   
-## Linux Distributions
+## Info - Linux Distributions
 - Ubuntu
 - Fedora
 - CentOS
 - Red Hat Enterprise Linux (RHEL)
 - Kali
 
-## What is a Package Manager?
+## Info - What is a Package Manager?
 Examples
 - apt/apt-get, yum, rpm, dnf, nuget, chocolatey
 - it is software utility that is used to install/uninstall/update/upgrade softwares
@@ -45,7 +45,7 @@ Examples
   - RHEL - yum or rpm or dnf
   - Kali - apt
 
-## What is Hypervisor?
+## Info - What is Hypervisor?
 - is a software that helps you run multiple OS on the same laptop/desktop/workstation/server
 - multiple OS can be actively running side by side
 - it is a combination of hardware + software technology
@@ -55,11 +55,11 @@ Examples
   - Type 1 - used in servers/workstations ( doesn't require a Host OS )
   - Type 2 - used in laptops/desktops/workstations ( requires a Host OS - can be Windows/Mac/Linux )
 
-## What is VPC?
+## Info - What is VPC?
 - Virtual Private Cloud
 - it is a big network usually that could support 65536 IP addresses
   
-## What is a subnet?
+## Info - What is a subnet?
 - logical network, VPC is divided into many logical networks called Subnet
 - Subnets allows System administrators to apply different security policies for different Subnets
 - there could be a Subnet for accounts departmnet, HR dept, COO office(CEO, CTO & CFO), Software, IT, etc with different permissions and network policies
@@ -85,7 +85,7 @@ Examples
 192.168.49.108
 192.168.49.105
 
-## What is Key pair?
+## Info - What is Key pair?
 - for an unix/linux user, instead of typing password to login an unix/linux/mac machine, we could create a key pair
 - key pair contains a private key and a public key
 - the private key will be kept on the same machine where it was created, usually in the home directory /home/jegan/.ssh/id_rsa
@@ -101,7 +101,7 @@ Examples
 ![3 models](iaas.jpeg)
 
 ## Info - What is an ec2 instance?
-- it is a virtual machine we create in the public AWS cloud
+- it is a virtual machine we can create in the public AWS cloud
 - virtual machines could be created on our laptops/desktops/workstation/on-prem servers
 - virtual machines could also be created on AWS/Azure/GCP/Digital Ocean public cloud portals
 - is an Infrastructure as a Service (IaaS)
@@ -191,6 +191,43 @@ Terminate the ec2 instance
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/5d678024-1a88-4f42-878d-a52656ed615e)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/999b59e6-7cb4-485c-802a-1cf5f34db967)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/962e7b37-8bbc-42b7-9b10-c7ca42536ef3)
+
+## Lab - Creating a windows ec2 instance
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c6b3df64-dd65-4649-85b2-c2bce31370a0)
+
+In the the top right corner, you will find "Launch Instance" in orange color, click on it
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b531d780-7811-4869-94c9-0642b09be9f6)
+
+Under Name and Tags, type yourname-windows-ec2
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ef2432e7-1467-4b1f-ba3b-71175c30c28c)
+
+Application and OS Images, select Windows
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8f8d48dd-41fc-4664-ba82-33ceddaca781)
+
+Instance type, select "t2 micro"
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/74ef2774-c49d-474b-a67d-17da0f7b79f1)
+
+Under key-pair, select the key-pair you created while creating your ubuntu ec2 instance
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/96887dd7-dd40-4584-92ba-9a242c315890)
+
+Under Network Settings, select existing security group
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/d59f309f-b420-4cd0-814f-a68736cb0382)
+
+Configure storage, accept the default storage
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/6af83acd-902e-4aef-89f0-3b2208eb63ff)
+
+Click on "Launch instance" orange button
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8dbfee20-3b76-400c-a69a-bf1d988d8d17)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/54bc115d-73f4-429f-8e87-da6f78173dc6)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/58879b16-37b4-47c1-8cec-565616ac67ff)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/edc06e76-f783-465c-8b51-a5e818833524)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b7133c81-f4c3-4904-a3b0-81e954b388f3)
+
+Select the checkbox that appears in front of the ec2 instance name and click on "Connect" that appeas in the top 
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/db7ac652-57c1-4cd5-b22d-30310f262475)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/5560f7c6-ab9d-4918-be39-40f8be352ae1)
+
+
 
 ## Lab - Creating an application Load Balancer
 
