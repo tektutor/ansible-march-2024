@@ -186,7 +186,7 @@ exit
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3834fc00-cfd4-4264-ae48-e6552198d6a2)
 
 Terminate the ec2 instance
-![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c8be16ce-d0f1-4222-831b-c19ed91fa7c8)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/541d0c55-2875-47c6-ac77-82729a18ffe8)
 
 
 ## Lab - Creating an application Load Balancer
