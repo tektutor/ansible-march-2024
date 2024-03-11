@@ -255,7 +255,7 @@ Copy the password and paste it in Remina
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3f625a42-4ac9-473f-8e7b-450bc7b40890)
 
 Click on "Save and Connect" button in Remina
-![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/448cae59-b897-48b0-82de-a5645f2989fb)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3f625a42-4ac9-473f-8e7b-450bc7b40890)
 
 Click on "Yes" to accept certificate
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/bc790b04-1892-4592-8ffa-651f152912aa)
