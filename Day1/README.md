@@ -94,9 +94,30 @@ Examples
 - this is an alternate way to login to unix/linux/mac machines without typing password
 - this is considered more security compared to typing password 
 
+## Info - Services offered by Public Cloud Vendors
+- renting just the hardware - which is called Infrastructure as a Service ( IaaS)
+- renting hardware + OS - which is called Platform as a Service ( PaaS )
+- renting hardware + OS + Software - which is referred as Software as a Service ( SaaS)
+
+
+## Info - What is an ec2 instance?
+- it is a virtual machine we create in the public AWS cloud
+- virtual machines could be created on our laptops/desktops/workstation/on-prem servers
+- virtual machines could also be created on AWS/Azure/GCP/Digital Ocean public cloud portals
+- is an Infrastructure as a Service (IaaS)
+- in this model, Amazon takes care of networking, storage, servers and managing virtualization
+- We need to take care of Operating System, application and data
+
 ## Lab - Login to AWS Web Console with your login credentials shared to you
 Once you login, your AWS web console would look like this
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/229e7409-3c1b-48e9-8bdf-60acd8f46033)
+
+## Lab - Creating an ec2 instance with Ubuntu 22.04 Linux
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/094d7851-6ca5-448e-b5f2-6d2f7aec8d31)
+
+Click on the Launch instances that show up in the top right corner (orange color)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c0ce2d06-94b4-4f62-9112-1ab704604dc2)
+
 
 
 ## Connecting to the ec2 instance from your lab machine using ssh
