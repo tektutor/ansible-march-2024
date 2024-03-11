@@ -158,11 +158,11 @@ Copy the command that show near Example
 ```
 cd ~/Downloads
 chmod 400 ./jegan-new.pem
-ssh -i ./jegan-new.pem ubuntu@ec2-52-12-170-75.us-west-2.compute.amazonaws.com
+ssh -i "jegan-new.pem" ubuntu@ec2-54-245-204-120.us-west-2.compute.amazonaws.com
 ```
 
 Expected output
-![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8e53e395-96c4-4478-a93e-cefd7fe7316c)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/e67ed0de-a60f-4c53-9ea4-319957334860)
 
 ## Lab - Creating an application Load Balancer
 
@@ -170,8 +170,10 @@ We need to create 2 ec2 instances with Ubuntu 22.04 OS
 
 Once the ec2 instances starts running, connect to the ec2 instance
 ```
-ssh -i "jegan-new.pem" ubuntu@ec2-54-213-192-149.us-west-2.compute.amazonaws.com
+ssh -i "jegan-new.pem" ubuntu@ec2-54-245-204-120.us-west-2.compute.amazonaws.com
 ```
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/e67ed0de-a60f-4c53-9ea4-319957334860)
+
 
 From the ec2 instance, install nginx web server
 ```
