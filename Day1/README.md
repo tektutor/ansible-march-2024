@@ -98,7 +98,7 @@ Examples
 - renting just the hardware - which is called Infrastructure as a Service ( IaaS)
 - renting hardware + OS - which is called Platform as a Service ( PaaS )
 - renting hardware + OS + Software - which is referred as Software as a Service ( SaaS)
-![3 models][iaas.jpeg]
+![3 models](aas.jpeg)
 
 ## Info - What is an ec2 instance?
 - it is a virtual machine we create in the public AWS cloud
