@@ -108,7 +108,8 @@ Examples
 - in this model, Amazon takes care of networking, storage, servers and managing virtualization
 - We need to take care of Operating System, application and data
 
-## Lab - Login to AWS Web Console with your login credentials shared to you
+## Lab - Login to AWS Web Console with your login credentials shared to you ( You need to perform all the lab exercies in the lab machine browser not on your office laptop web browser )
+
 Once you login, your AWS web console would look like this
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/229e7409-3c1b-48e9-8bdf-60acd8f46033)
 
@@ -118,6 +119,29 @@ Once you login, your AWS web console would look like this
 Click on the Launch instances that show up in the top right corner (orange color)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c0ce2d06-94b4-4f62-9112-1ab704604dc2)
 
+Under the name and tags, type yourname-ubuntu-ec2
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b0b32c6d-06cb-446f-a9ab-70e95ba7e0e2)
+
+Under the Application and OS Images, select Ubuntu
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/360a107c-47ec-4935-9021-6bea8546cf14)
+
+Under the Instance type, select t2-micro
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/266bc2ba-5984-4939-a13c-11c7f69bdd33)
+
+Under key-pair, select 'create new key pair' to generate new key-pair and download the same onto your lab machine.
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/76737535-3184-4523-a131-08ac5ed22cde)
+
+Under Network settings, select existing security group, in my case I chose launch-wizard-1
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/6cad4011-1b0f-482d-b4df-df851ebc225a)
+
+Under Configure storage, accept the default size
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/a66684f9-e1dc-4288-82a1-4af167a20948)
+
+Click on launch instance at the bottom right corner ( orange color button )
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/c0a4f083-64a7-42d7-9829-2309e3037cd3)
+
+Click on the ec2 instance link that appears in green color
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/130830a2-c59d-42a7-98d8-419a048f8d9b)
 
 
 ## Connecting to the ec2 instance from your lab machine using ssh
