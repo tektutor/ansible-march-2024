@@ -77,3 +77,19 @@ ssh -i ./jegan-new.pem ubuntu@ec2-52-12-170-75.us-west-2.compute.amazonaws.com
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8e53e395-96c4-4478-a93e-cefd7fe7316c)
+
+## Lab - Creating an application Load Balancer
+
+We need to create 2 ec2 instances with Ubuntu 22.04 OS
+
+Once the ec2 instances starts running, connect to the ec2 instance
+```
+ssh -i "jegan-new.pem" ubuntu@ec2-54-213-192-149.us-west-2.compute.amazonaws.com
+```
+
+From the ec2 instance, install nginx web server
+```
+sudo apt update
+sudo apt install -y nginx
+```
+
