@@ -1,26 +1,32 @@
 # Day 1
 
-## Kindly complete the pre-test and let me now
-
 ## On Premise Server
 - Servers owned by your organization
+- also referred as On-Prem servers
 
+## Data Center
+- a physical facility that organizations uses to host their critcal applications and data
+- key components of a data center design include routers, switches, firewalls, storage systems, servers
+  
 ## Public Cloud
 - AWS, GCP, Azure, Digital Ocean, etc
 - Servers that you can rent from Amazon, Google, Microsoft online
 
 ## What is Static IP?
-- it won't change even if the machine rebooted
+- it won't change even if the machine is rebooted
+- it could be private/public
 
 ## What is Dynamic IP?
-- it will chnage everytime the machine is rebooted
+- it will change everytime the machine is rebooted
+- it could be private/public
 
 ## What is Private IP?
 - the IP Address is accessible only within that machine/same network
 
 ## What is Public IP?
 - the IP address is accessible from Internet
-
+- this could be static/dynamic
+  
 ## Linux Distributions
 - Ubuntu
 - Fedora
@@ -28,7 +34,7 @@
 - Red Hat Enterprise Linux (RHEL)
 - Kali
 
-## What is Package Manager?
+## What is a Package Manager?
 Examples
 - apt/apt-get, yum, rpm, dnf, nuget, chocolatey
 - it is software utility that is used to install/uninstall/update/upgrade softwares
@@ -43,8 +49,20 @@ Examples
 - is a software that helps you run multiple OS on the same laptop/desktop/workstation/server
 - multiple OS can be actively running side by side
 - it is a combination of hardware + software technology
+- AMD Processors Virtualization feature - AMD-V
+- Intel Processors Virtualization feature - VT-X
+- two types
+  - Type 1 - used in servers/workstations ( doesn't require a Host OS )
+  - Type 2 - used in laptops/desktops/workstations ( requires a Host OS - can be Windows/Mac/Linux )
 
+## What is VPC?
+- Virtual Private Cloud
+- it is a big network usually that could support 65536 IP addresses
+  
 ## What is a subnet?
+- logical network, VPC is divided into many logical networks called Subnet
+- Subnets allows System administrators to apply different security policies for different Subnets
+- there could be a Subnet for accounts departmnet, HR dept, COO office(CEO, CTO & CFO), Software, IT, etc with different permissions and network policies
 - it is a range of IP address
 - in other words IP block
 - small network
@@ -67,6 +85,14 @@ Examples
 192.168.49.108
 192.168.49.105
 
+## What is Key pair?
+- for an unix/linux user, instead of typing password to login an unix/linux/mac machine, we could create a key pair
+- key pair contains a private key and a public key
+- the private key will be kept on the same machine where it was created, usually in the home directory /home/jegan/.ssh/id_rsa
+- the public key will be distributed to the trusted machines usually these keys are appended to a file called authorized_keys in the trusted machine /home/some-user/.ssh/authorized_keys
+- when you login from your machine to a remote machine that has your public key, the remote machine gives the public key of yours which will be validated against the private key stored in your home directory, if it matches you will be allowed to login the remote machine without password
+- this is an alternate way to login to unix/linux/mac machines without typing password
+- this is considered more security compared to typing password 
 
 ## Connecting to the ec2 instance from your lab machine using ssh
 ```
