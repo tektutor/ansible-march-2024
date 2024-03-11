@@ -145,6 +145,16 @@ Click on the ec2 instance link that appears in green color
 
 
 ## Connecting to the ec2 instance from your lab machine using ssh
+Now select the check box that appears on the left side of your ec2 instance that is running
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/4049a509-c981-40ea-bd51-01ff215e8f94)
+
+Click on "connect" button that appears in the top
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/4948a0e6-ec48-43d7-8278-dccee6b9269b)
+
+Copy the command that show near Example
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b4f9fe7b-b261-487c-8d56-a78e08b8e5a1)
+
+
 ```
 cd ~/Downloads
 chmod 400 ./jegan-new.pem
