@@ -262,6 +262,11 @@ Click on "Yes" to accept certificate
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/1c4409ed-838e-46f5-ba6f-6798361ab832)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b696e2b8-a8a2-489e-9aa6-2823c927b789)
 
+Make sure, your terminate the Windows ec2 instance once you have completed this lab exercise
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/fdb273b5-ff7c-42a5-b8cc-b601035999c5)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/304e5c8c-9c21-40dc-a50f-3a1a032e2212)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/fa1e0653-0644-43d0-ac96-0724d91df261)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/aa0a288b-bc66-4fb6-9bb9-3afbf78901e6)
 
 
 
