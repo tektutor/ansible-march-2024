@@ -225,7 +225,43 @@ Click on "Launch instance" orange button
 
 Select the checkbox that appears in front of the ec2 instance name and click on "Connect" that appeas in the top 
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/db7ac652-57c1-4cd5-b22d-30310f262475)
-![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/5560f7c6-ab9d-4918-be39-40f8be352ae1)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/bdb9afdb-3164-4ab1-91ad-e0de9e06d94a)
+
+Click on the "Download remote desktop file" to your lab machine.
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8db5dded-033f-47c8-a5b8-869f4e691f11)
+
+Open Remina (Windows Remote Desktop client software on your Ubuntu Lab machine )
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8e1ef222-acc4-4d4c-a316-e87341afe05a)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/6d7d875a-3e3d-4427-986a-dae5b0245bfe)
+
+Click on "Add a new connection profile"
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/382f9346-7167-45ea-b513-91e8fccf0709)
+
+Copy the "Public DNS"
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0af31613-412a-4051-9bde-773b91819c3a)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/635881bb-ad88-4feb-ad9e-296dd0dca8ae)
+
+Click on the "Get password"
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0731d691-b77e-4518-8f07-47ee81cc208d)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/2b6b82bd-d52b-474f-bf3d-d655b5f5e540)
+
+Click on the "Upload private key file" button
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/7e811a3c-0ffd-4052-8d21-9fa16e4834ee)
+
+Click on "Decrypt password" button
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b660d784-4d7f-4e4b-8aa6-cefbbb764591)
+
+Copy the password and paste it in Remina
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3f625a42-4ac9-473f-8e7b-450bc7b40890)
+
+Click on "Save and Connect" button in Remina
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/448cae59-b897-48b0-82de-a5645f2989fb)
+
+Click on "Yes" to accept certificate
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/bc790b04-1892-4592-8ffa-651f152912aa)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/1c4409ed-838e-46f5-ba6f-6798361ab832)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b696e2b8-a8a2-489e-9aa6-2823c927b789)
+
 
 
 
