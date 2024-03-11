@@ -94,6 +94,11 @@ Examples
 - this is an alternate way to login to unix/linux/mac machines without typing password
 - this is considered more security compared to typing password 
 
+## Lab - Login to AWS Web Console with your login credentials shared to you
+Once you login, your AWS web console would look like this
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/229e7409-3c1b-48e9-8bdf-60acd8f46033)
+
+
 ## Connecting to the ec2 instance from your lab machine using ssh
 ```
 cd ~/Downloads
