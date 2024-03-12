@@ -311,3 +311,4 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8863b01f-7df1-4a61-9501-b9821ebb3823)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/9b477f60-9feb-45f7-b714-4d412ad36890)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/78195856-0373-41cb-baa5-32ac0e2af2e2)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3a171f1a-6c1f-4c72-8216-93b47a64ea81)
