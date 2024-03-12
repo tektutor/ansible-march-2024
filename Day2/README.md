@@ -186,3 +186,16 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ee8e1250-eb50-4995-a20e-74dcdd54f0e2)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/2dc2f6a3-86c0-4ccf-bff5-651047482f5c)
 
+## Lab - Deleting a container 
+```
+docker ps -a
+docker rm hello-container
+docker ps -a
+docker rm ubuntu1
+docker stop ubuntu1
+docker rm ubuntu1
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b335d08c-4cfb-4d93-82e2-0c1bedf378b5)
