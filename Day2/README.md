@@ -123,3 +123,14 @@ Server:
   127.0.0.0/8
  Live Restore Enabled: false  
 </pre>
+
+## Lab - Listing docker images from Local Docker Registry
+```
+docker images
+```
+
+Expected output
+<pre>
+root@tektutor.org:~# docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE  
+</pre>
