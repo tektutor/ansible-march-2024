@@ -53,3 +53,73 @@ https://www.youtube.com/@JeganathanSwaminathan
 - Examples
   - runC
   - CRI-O
+
+## Lab - Finding the version of Docker you are using
+```
+docker --version
+```
+
+Expected output
+<pre>
+root@tektutor.org:~# docker --version
+Docker version 24.0.5, build 24.0.5-0ubuntu1~22.04.1  
+</pre>
+
+```
+docker info
+```
+Expected output
+<pre>
+root@tektutor.org:~# docker info
+Client:
+ Version:    24.0.5
+ Context:    default
+ Debug Mode: false
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 24.0.5
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 
+ runc version: 
+ init version: 
+ Security Options:
+  apparmor
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.5.0-21-generic
+ Operating System: Ubuntu 22.04.4 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 24
+ Total Memory: 62.48GiB
+ Name: tektutor.org
+ ID: 30abfe9c-99b6-4e45-80b9-4868b207da52
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false  
+</pre>
