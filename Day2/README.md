@@ -1,7 +1,9 @@
 # Day 2
 ## My medium blogs
 https://medium.com/tektutor/container-engine-vs-container-runtime-667a99042f3
+
 https://medium.com/@jegan_50867/docker-overview-be840f727b3
+
 https://medium.com/@jegan_50867/docker-commands-ba19387383b4
 
 ## YouTube Channel
