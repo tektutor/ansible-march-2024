@@ -184,4 +184,5 @@ docker network inspect bridge
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ee8e1250-eb50-4995-a20e-74dcdd54f0e2)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/2dc2f6a3-86c0-4ccf-bff5-651047482f5c)
 
