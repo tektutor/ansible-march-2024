@@ -134,3 +134,15 @@ Expected output
 root@tektutor.org:~# docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE  
 </pre>
+
+## Lab - Download docker images from Docker Hub Remote Registry to your Docker Local Registry
+```
+docker pull ubuntu:latest
+docker images
+docker pull centos:7.9.2009
+docker images
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/f4d8d5e8-9895-426d-a58d-34543ca2e4b8)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/7a08db1a-51e9-4851-a065-892386d8fccb)
