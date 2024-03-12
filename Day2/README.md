@@ -313,3 +313,42 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/78195856-0373-41cb-baa5-32ac0e2af2e2)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3a171f1a-6c1f-4c72-8216-93b47a64ea81)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/4561310f-79ac-4bab-942f-e9164013e366)
+
+# Ansible
+
+## Info - What is a Configuration Management Tool?
+- used by System Administrator to automate software installation/uninstallation/update/upgrade
+- Examples
+  - Puppet
+  - Chef
+  - Salt/Salt Stack
+  - Ansible
+
+## Info - Puppet 
+- this is the oldest configuration management tool
+- this came around year 2008
+- it uses Puppet Language as DSL(Domain Specific Langauage)
+- DSL - nothing but language used to automate
+- it follows client/server architecture
+- installation of Puppet is bit tedious
+- learning Puppet requires mastering Puppet language
+
+## Info - Chef
+- this came after Puppet
+- this uses Ruby as the DSL
+- it follow client/server architecture
+- installation is tedious
+- learning chef requires mastering Ruby scripting language
+
+## Info - Ansible
+- this is one of the more latest configuration management tool
+- this is developed in Python by Micheal Deehan
+- Michael Deehan was former employee of Red Hat
+- Yaml is the DSL used by Ansible
+- YAML - superset of JSON
+- Ansible comes in 2 flavours
+  - Ansible core - opensource and command-line only
+  - AWX - opensource variant of Ansible Tower ( supports Web Interface )
+   - developed on top of Ansible core
+  - Ansible Tower - Red Hat enterprise product - Web console (GUI)
+    - developed on top of AWX
