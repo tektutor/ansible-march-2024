@@ -284,3 +284,11 @@ http://localhost
 ```
 
 Each time you refresh the output should come from nginx1, nginx2 and nginx3 containers in a round-robin fashion.
+
+## Lab - Creating a mysql db server container
+```
+docker run -d --name mysql --hostname mysql -e MYSQL_ROOT_PASSWORD=root mysql:latest
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/73c224d0-4cee-40cb-84fb-e0cbc80e1e7b)
