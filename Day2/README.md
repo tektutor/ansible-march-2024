@@ -1,4 +1,8 @@
 # Day 2
+## My medium blogs
+https://medium.com/tektutor/container-engine-vs-container-runtime-667a99042f3
+https://medium.com/@jegan_50867/docker-overview-be840f727b3
+https://medium.com/@jegan_50867/docker-commands-ba19387383b4
 
 ## Docker Overview
 - It is developed in Google Go programming language by an organization called Docker Inc
@@ -10,6 +14,10 @@
 - Docker Client is docker
 - Docker Registry
   - is a server with a collection of many Docker Images
+  - there are 3 types of Docker Registries
+    - Local Docker Registry
+    - Private Docker Registry ( Optionally you setup Nexus/Artifactory Server )
+    - Remote Docker Registry ( Docker Hub Website )
 
 - Docker Image
   - is a specification/blueprint of a Docker container
@@ -24,3 +32,19 @@
   - every container get its own software defined network card
   - every container container has its own file system ( files and folders )
   - usually one container represents one application which is also the best practice
+
+## What is Container Engine?
+- Docker is a Container Engine
+- Docker depends on containerd for managing images and containers
+- Containerd depends on runC container runtime to manage containers
+- offers user-friendly commands to create and manage containers without the need to know any Kernel low-level technical details
+  Examples
+  - Docker depends on runC container Runtime
+  - Podman depends on CRI-O Container Runtime
+    
+## What is Container Runtime?
+- they are low-level softwares which are generally not used by end-users like us
+- these are used by Container Engines
+- Examples
+  - runC
+  - CRI-O
