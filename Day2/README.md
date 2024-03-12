@@ -175,3 +175,13 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ebfe1609-277c-48b3-bc53-9de63c9d890f)
+
+## Lab - Listing network types docker supports
+```
+docker network ls
+docker network inspect bridge
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ee8e1250-eb50-4995-a20e-74dcdd54f0e2)
+
