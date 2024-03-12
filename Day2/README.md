@@ -293,3 +293,12 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/73c224d0-4cee-40cb-84fb-e0cbc80e1e7b)
+
+Let's open a shell inside the mysql container, when it prompts for password, type root
+```
+docker exec -it mysql /bin/sh
+mysql -u root -p
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3fcc02a8-53c1-4f3a-abac-7b94c4fa73fc)
