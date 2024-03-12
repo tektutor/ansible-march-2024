@@ -203,6 +203,12 @@ Expected output
 
 
 ## Lab - Port fowarding - Setup a load balancer with nginx
+
+Delete any container that might conflict
+```
+docker rm -f $(docker ps -aq)
+```
+
 Let's create 3 web server containers
 ```
 docker run -d --name nginx1 --hostname nginx1 nginx:latest
