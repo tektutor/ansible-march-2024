@@ -165,3 +165,13 @@ docker run hello-world:latest
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/d5d7a519-7a05-49f0-a251-7f36c313ce0d)
+
+## Lab - Renaming a container
+```
+docker ps -a
+docker rename wonderful_pasteur hello-container
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ebfe1609-277c-48b3-bc53-9de63c9d890f)
