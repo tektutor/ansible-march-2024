@@ -200,3 +200,81 @@ docker ps -a
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/b335d08c-4cfb-4d93-82e2-0c1bedf378b5)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/a6e87c3b-f58c-4f1d-ac2a-535770817264)
+
+
+## Lab - Port fowarding - Setup a load balancer with nginx
+Let's create 3 web server containers
+```
+docker run -d --name nginx1 --hostname nginx1 nginx:latest
+docker run -d --name nginx2 --hostname nginx2 nginx:latest
+docker run -d --name nginx3 --hostname nginx3 nginx:latest
+docker ps
+```
+
+Let's create the lb container with port-forwarding
+```
+docker run -d --name lb --hostname lb -p 80:80 nginx:latest
+docker ps
+```
+
+Let's create the nginx.conf with the below content on your local machine
+```
+user  nginx;
+worker_processes  auto;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    upstream servers {
+        server 172.17.0.2:80; 
+        server 172.17.0.3:80;
+        server 172.17.0.4:80;
+    }
+    
+    server {
+        location / {
+            proxy_pass http://servers;
+        }
+    }
+}
+```
+
+Let's copy the nginx.conf from your local machine to the lb container
+```
+docker cp nginx.conf lb:/etc/nginx/nginx.conf
+```
+
+We need to restart the lb container to apply the config changes
+```
+docker restart lb
+```
+
+Let's check if the lb container is running
+```
+docker ps
+```
+
+Let's update the index.html on nginx1, nginx2 and nginx3 containers
+```
+echo "Web Server 1" > index.html
+docker cp index.html nginx1:/usr/share/nginx/html/index.html
+
+echo "Web Server 2" > index.html
+docker cp index.html nginx2:/usr/share/nginx/html/index.html
+
+echo "Web Server 3" > index.html
+docker cp index.html nginx3:/usr/share/nginx/html/index.html
+```
+
+We can now test if the lb container is able to load balance the requests. On your ubuntu lab machine type the below url
+
+```
+http://localhost
+```
+
+Each time you refresh the output should come from nginx1, nginx2 and nginx3 containers in a round-robin fashion.
