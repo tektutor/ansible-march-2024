@@ -288,6 +288,7 @@ Each time you refresh the output should come from nginx1, nginx2 and nginx3 cont
 ## Lab - Creating a mysql db server container
 ```
 docker run -d --name mysql --hostname mysql -e MYSQL_ROOT_PASSWORD=root mysql:latest
+docker ps
 ```
 
 Expected output
