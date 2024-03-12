@@ -304,3 +304,10 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3fcc02a8-53c1-4f3a-abac-7b94c4fa73fc)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/98e4e943-c0c8-4a6e-b081-847518cde5da)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0046ae5e-0227-476e-9928-16ecb055a27c)
+
+Now, let's use external volume to store the database
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8863b01f-7df1-4a61-9501-b9821ebb3823)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/9b477f60-9feb-45f7-b714-4d412ad36890)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/78195856-0373-41cb-baa5-32ac0e2af2e2)
