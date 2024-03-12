@@ -146,3 +146,14 @@ docker images
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/f4d8d5e8-9895-426d-a58d-34543ca2e4b8)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/7a08db1a-51e9-4851-a065-892386d8fccb)
+
+## Lab - Deleting a docker image from your Docker local registry
+```
+docker pull hello-world:latest
+docker images
+docker rmi hello-world:latest
+docker images
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/4cae123e-9429-4c15-9b2e-020c30df4ec1)
