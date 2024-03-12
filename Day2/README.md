@@ -157,3 +157,11 @@ docker images
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/4cae123e-9429-4c15-9b2e-020c30df4ec1)
+
+## Lab - Creating your first docker container
+```
+docker run hello-world:latest
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/d5d7a519-7a05-49f0-a251-7f36c313ce0d)
