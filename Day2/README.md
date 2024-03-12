@@ -352,3 +352,19 @@ Expected output
    - developed on top of Ansible core
   - Ansible Tower - Red Hat enterprise product - Web console (GUI)
     - developed on top of AWX
+
+## Lab - Finding ansible version
+```
+ansible --version
+```
+
+Expected output
+<pre>
+root@tektutor.org:~# ansible --version
+ansible 2.10.8
+  config file = None
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+</pre>
