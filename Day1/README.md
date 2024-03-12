@@ -269,6 +269,19 @@ Make sure, your terminate the Windows ec2 instance once you have completed this 
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/aa0a288b-bc66-4fb6-9bb9-3afbf78901e6)
 
 
+## Info - What is a Load Balancer?
+- distributes traffic to servers or applications
+- AWS supports 4 types of load balancers
+- Classic Load Balancer
+- Applicaiton Load Balancer (ALB)
+- Network Load Balancer (NLB)
+- Gateway Load Balancer (GLB)
+
+## Info - What is an AWS Classic Load Balancer?
+- can distribute incoming traffic to EC2 instances, containers, IP addresses in one or more Availability zones
+- monitors the health of targets and only routes to healthy targets
+- supports scaling either manually or automatically
+- 
 
 ## Lab - Creating an application Load Balancer
 
