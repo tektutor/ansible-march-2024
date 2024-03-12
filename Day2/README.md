@@ -303,4 +303,4 @@ mysql -u root -p
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/3fcc02a8-53c1-4f3a-abac-7b94c4fa73fc)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/98e4e943-c0c8-4a6e-b081-847518cde5da)
-![Uploading image.png…]()
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0046ae5e-0227-476e-9928-16ecb055a27c)
