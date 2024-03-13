@@ -54,6 +54,9 @@ https://www.youtube.com/@JeganathanSwaminathan
   - runC
   - CRI-O
 
+## Docker High Level Architecture
+![Docker Architecture](DockerHighLevelArchitecture.png)
+
 ## Lab - Finding the version of Docker you are using
 ```
 docker --version
