@@ -1,0 +1,20 @@
+- name: This playbook will install nginx, configures the web root folder, deploys custom web page
+  hosts: ubuntu 
+  tasks:
+  - name: Install nginx in Ubuntu ansible nodes
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start nginx service in Ubuntu ansible nodes
+    shell: service nginx start
+
+  - name: Create the custom web root folder
+    file: path=/var/html state=directory mode=0755
+
+  - name: Deploy custom web page
+    copy: src=index.html dest=/var/html/index.html
+
+  - name: Configure nginx web root folder to pick html pages from our custom folder
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Restart nginx service in Ubuntu ansible nodes
+    shell: service nginx restart
