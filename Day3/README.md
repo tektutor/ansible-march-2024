@@ -75,6 +75,14 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/e8dc54be-8522-4300-a6ff-fa12f4921b5e)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/fc65425c-effa-470b-bfa2-dab9fe315693)
 
+## Lab - Stopping nginx service using ansible ad-hoc command
+```
+cd ~/ansible-march-2024
+git pull
+cd Day3/ansible
+ansible -i inventory ubuntu1 -m shell -a "service nginx stop"
+```
+
 ## Lab - Running ansible playbook
 ```
 cd ~/ansible-march-2024
