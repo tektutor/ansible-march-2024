@@ -1,4 +1,4 @@
-iFROM centos:7.9.2009 
+FROM centos:7.9.2009 
 MAINTAINER Jeganathan Swaminathan <jegan@tektutor.org> <http://www.tektutor.org> 
 
 RUN yum install -y openssh-server openssh-clients
