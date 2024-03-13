@@ -102,5 +102,6 @@ curl http://localhost:8002
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0739b094-f1a7-4065-b57f-57c66ea6f7f0)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/eb7af250-deb3-4874-928d-82b14df08b3c)
 
 
