@@ -40,3 +40,7 @@ docker run -d --name centos2 --hostname centos2 -p 2004:22 -p 8004:80 tektutor/c
 
 docker ps
 ```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/863529be-e976-4f03-a843-772e54b1a247)
+
