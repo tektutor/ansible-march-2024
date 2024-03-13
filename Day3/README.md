@@ -21,7 +21,6 @@ Expected output
 cd ~/ansible-march-2024
 git pull
 cd Day3/CustomDockerImages/centos
-ssh-keygen
 cp ~/.ssh/id_rsa.pub authorized_keys
 docker build -t tektutor/centos-ansible-node:latest .
 ```
