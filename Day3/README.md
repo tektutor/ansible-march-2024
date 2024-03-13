@@ -12,6 +12,8 @@ docker build -t tektutor/ubuntu-ansible-node:latest .
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/a078ac07-f129-4ce2-8d28-9f6c9bbaeaca)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/900fa11f-e17f-4105-bba7-c83c27a2548a)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/57d36e2e-fd73-4e4f-ae4b-7b895ea9e2d1)
 
 
 ## Lab - Building a Custom CentOS Docker Image and use it as a CentOS Ansible Node
