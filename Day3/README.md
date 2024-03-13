@@ -1,5 +1,11 @@
 # Day 3
 
+## Info - Ansible inventory types
+<pre>
+1. Static inventory
+2. Dynamic inventory ( usually a python script )
+</pre>
+
 ## Lab - Building a Custom Ubuntu Docker Image and use it as an Ubuntu Ansible Node
 ```
 cd ~/ansible-march-2024
