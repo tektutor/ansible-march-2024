@@ -80,7 +80,7 @@ Expected output
 cd ~/ansible-march-2024
 git pull
 cd Day3/ansible
-ansible -i inventory ubuntu1 -m shell -a "service nginx stop"
+ansible -i inventory ubuntu -m shell -a "service nginx stop"
 ```
 
 ## Lab - Running ansible playbook
