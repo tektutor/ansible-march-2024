@@ -24,3 +24,8 @@ cd Day3/CustomDockerImages/centos
 cp ~/.ssh/id_rsa.pub authorized_keys
 docker build -t tektutor/centos-ansible-node:latest .
 ```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ea5d7a89-04f7-4124-a68e-885f695a77d6)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/40239fe1-2c9b-46fe-be4f-aa9eb1f43a96)
+
