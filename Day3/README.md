@@ -84,3 +84,11 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 ```
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8e02da83-7a18-433d-8ece-3b7eefe70d33)
+
+Let's see if we can access the web page from ubuntu1 and ubuntu2 ansible nodes
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/eb49350b-e0b8-4be1-a21b-e8be4f6320be)
