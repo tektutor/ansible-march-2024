@@ -104,4 +104,23 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0739b094-f1a7-4065-b57f-57c66ea6f7f0)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/eb7af250-deb3-4874-928d-82b14df08b3c)
 
+## Lab - Running the updated install nginx playbook
+```
+cd ~/ansible-march-2024
+git pull
+cd Day3/ansible/playbooks
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
 
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/67ec8811-7658-4d9a-9495-abd663b5abbe)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/756760d7-ddbd-4115-bf30-82e29838e491)
+
+Accessing the web page from ubuntu1 and ubuntu2 ansible nodes
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/f2f71fb8-4ab9-422f-9b58-1646f6047f14)
