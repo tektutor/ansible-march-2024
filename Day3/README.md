@@ -44,3 +44,11 @@ docker ps
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/863529be-e976-4f03-a843-772e54b1a247)
 
+## Lab - Let's test these containers if we can ssh into them without typing password
+
+Let's try to connect to ubuntu1 container via ssh as shown below
+```
+ssh -p 2001 root@localhost 
+```
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8af1bdcb-1999-478a-8642-09ca3c1fe0a0)
