@@ -92,3 +92,15 @@ curl http://localhost:8002
 ```
 
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/eb49350b-e0b8-4be1-a21b-e8be4f6320be)
+
+
+Accessing the web page from ubuntu1 and ubuntu2 ansible nodes
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/0739b094-f1a7-4065-b57f-57c66ea6f7f0)
+
+
