@@ -52,3 +52,14 @@ ssh -p 2001 root@localhost
 ```
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8af1bdcb-1999-478a-8642-09ca3c1fe0a0)
+
+## Lab - Ping the ansible nodes
+```
+cd ~/ansible-march-2024
+git pull
+cd Day3/ansible
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/23e462a6-5fad-4b7d-9dfa-3ab9b7cbaf6c)
