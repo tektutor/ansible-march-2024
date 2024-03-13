@@ -140,6 +140,5 @@ git pull
 cd Day3/ansible/playbooks
 ansible-playbook -i inventory -C install-nginx-playbook.yml
 ```
-
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/415ba120-f391-4ace-bff4-c08b5666abd3)
