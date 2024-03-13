@@ -356,6 +356,9 @@ Expected output
   - Ansible Tower - Red Hat enterprise product - Web console (GUI)
     - developed on top of AWX
 
+## Ansible High-Level Architecture
+![Ansible Architecture](AnsibleHighLevelArchitecture.png)
+
 ## Lab - Finding ansible version
 ```
 ansible --version
