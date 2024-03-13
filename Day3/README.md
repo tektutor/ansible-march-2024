@@ -1,5 +1,11 @@
 # Day 3
 
+## Info - Ansible inventory types
+<pre>
+1. Static inventory
+2. Dynamic inventory ( usually a python script )
+</pre>
+
 ## Lab - Building a Custom Ubuntu Docker Image and use it as an Ubuntu Ansible Node
 ```
 cd ~/ansible-march-2024
@@ -52,3 +58,19 @@ ssh -p 2001 root@localhost
 ```
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/8af1bdcb-1999-478a-8642-09ca3c1fe0a0)
+
+## Lab - Ping the ansible nodes
+```
+cd ~/ansible-march-2024
+git pull
+cd Day3/ansible
+ansible -i inventory all -m ping
+ansible -i inventory ubuntu -m ping
+ansible -i inventory centos -m ping
+ansible -i inventory centos1 -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/23e462a6-5fad-4b7d-9dfa-3ab9b7cbaf6c)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/e8dc54be-8522-4300-a6ff-fa12f4921b5e)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/fc65425c-effa-470b-bfa2-dab9fe315693)
