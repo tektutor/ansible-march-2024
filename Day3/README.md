@@ -132,3 +132,14 @@ curl http://localhost:8002
 
 Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/f2f71fb8-4ab9-422f-9b58-1646f6047f14)
+
+## Lab - Dry running playbook without actually making any changes in the ansible nodes
+```
+cd ~/ansible-march-2024
+git pull
+cd Day3/ansible/playbooks
+ansible-playbook -i inventory -C install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/20cfc20f-eeac-4137-834d-e05f2610317c)
