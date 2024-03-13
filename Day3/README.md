@@ -142,4 +142,4 @@ ansible-playbook -i inventory -C install-nginx-playbook.yml
 ```
 
 Expected output
-![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/20cfc20f-eeac-4137-834d-e05f2610317c)
+![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/415ba120-f391-4ace-bff4-c08b5666abd3)
