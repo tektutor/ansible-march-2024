@@ -29,3 +29,14 @@ Expected output
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/ea5d7a89-04f7-4124-a68e-885f695a77d6)
 ![image](https://github.com/tektutor/ansible-march-2024/assets/12674043/40239fe1-2c9b-46fe-be4f-aa9eb1f43a96)
 
+
+## Lab - Let's create couple of containers using our custom docker image
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+
+docker run -d --name centos1 --hostname centos1 -p 2003:22 -p 8003:80 tektutor/centos-ansible-node:latest
+docker run -d --name centos2 --hostname centos2 -p 2004:22 -p 8004:80 tektutor/centos-ansible-node:latest
+
+docker ps
+```
