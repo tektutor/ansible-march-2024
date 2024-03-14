@@ -1,0 +1,11 @@
+- name: This playbook will demonstrate use of list variables
+  hosts: ubuntu 
+  vars:
+  - software_tools:
+    - vim
+    - tree
+    - default-jdk
+  tasks:
+  - name: Install software tools
+    apt: name="{{item}}" state=latest update_cache=yes
+    with_list: "{{software_tools}}"

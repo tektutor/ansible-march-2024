@@ -1,0 +1,8 @@
+- name: Playbook demonstrate use of register variable
+  hosts: all
+  tasks:
+  - name: Retrieve hostname of ansible nodes
+    shell: hostname
+    register: output
+
+  - debug: var=output
