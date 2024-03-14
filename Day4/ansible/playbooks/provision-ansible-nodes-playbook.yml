@@ -1,6 +1,7 @@
 - name: This playbook will provision ubuntu and centos ansible node containers
   hosts: localhost
   become: yes
+  gather_facts: yes 
   tasks:
   - name: Install python package installer
     when: ansible_distribution == "Ubuntu"

@@ -1,0 +1,42 @@
+- name: This playbook will build tektutor ansible node custom docker images
+  hosts: localhost
+  tasks:
+  - name: Generate key pair for non-admin user
+    shell: 
+      cmd: ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y
+      executable: /bin/bash
+
+  - name: Copy the public as authorized_key
+    command: cp ~/.ssh/id_rsa.pub authorized_keys
+
+  - name: Remove all the ubuntu and centos ansible node containers if any
+    shell: docker rm -f $(docker ps -qf "name=ubuntu|centos")
+    ignore_errors: yes
+
+  - name: Remove the custom ubuntu ansible node docker image if exists
+    shell: docker rmi tektutor/ubuntu-ansible-node:latest
+    ignore_errors: yes
+
+  - name: Build custom ubuntu ansible node docker image
+    docker_image:
+      build:
+        path: .
+      name: tektutor/ubuntu-ansible-node:latest
+      dockerfile: UbuntuDockerfile
+      state: build
+      source: build 
+    become: yes 
+
+  - name: Remove the custom centos ansible node docker image if exists
+    shell: docker rmi tektutor/centos-ansible-node:latest
+    ignore_errors: yes
+
+  - name: Build custom centos ansible node docker image
+    docker_image:
+      build:
+        path: .
+      name: tektutor/centos-ansible-node:latest
+      dockerfile: CentOSDockerfile
+      state: build
+      source: build 
+    become: yes 
