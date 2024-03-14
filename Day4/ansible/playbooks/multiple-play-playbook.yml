@@ -1,8 +1,17 @@
 - name: Provision docker containers in local machine
   hosts: localhost
-  become: yes
+  vars:
+  - env:
+      ANSIBLE_CONFIG: ./ansible.cfg
   tasks:
-  - shell: ansible-playbook -i ./inventory provision-ansible-nodes-playbook.yml
+  - shell: 
+      cmd: echo "" > ~/.ssh/known_hosts
+      executable: /bin/bash
+    ignore_errors: yes
+
+  - shell: ansible-playbook provision-ansible-nodes-playbook.yml
+    environment: "{{env}}"
+    become: yes
 
 - name: This play run in Ubuntu and CentOS ansible nodes
   hosts: all 
