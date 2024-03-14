@@ -1,0 +1,22 @@
+- name: This playbook will print container details whatever we normally get using docker inspect command
+  hosts: localhost
+  tasks:
+  - name: Uninstall older version of docker-py python module
+    shell: pip uninstall docker-py -y
+    ignore_errors: yes
+
+  - name: Install older version of docker-py python module
+    shell: pip install docker
+
+  - name: Create ubuntu-001 container
+    docker_container:
+      name: ubuntu-001
+      state: started
+      image: tektutor/ubuntu-ansible-node:latest
+
+  - name: Print docker container details
+    docker_container_info:
+      name: ubuntu-001
+    register: output
+
+  - debug: var=output

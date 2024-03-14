@@ -1,0 +1,8 @@
+- name: Demonstrates cloning github repo using ansible playbook
+  hosts: localhost
+  tasks:
+  - name: Clone TekTutor training repository
+    git:
+      repo: https://github.com/tektutor/ansible-march-2024.git
+      clone: yes
+      dest: /tmp/ansible-march-2024

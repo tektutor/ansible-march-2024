@@ -1,0 +1,9 @@
+- name: Playbook prints the config details of our current github repository
+  hosts: localhost
+  tasks:
+  - name: Print github config info
+    git_config:
+      list_all: yes 
+    register: output
+
+  - debug: var=output
