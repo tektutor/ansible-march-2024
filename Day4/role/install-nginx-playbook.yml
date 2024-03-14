@@ -1,0 +1,4 @@
+- name: Demonstrates using roles in playbook
+  hosts: all
+  roles:
+  - nginx

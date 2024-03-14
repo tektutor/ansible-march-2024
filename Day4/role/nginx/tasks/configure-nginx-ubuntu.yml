@@ -1,0 +1,5 @@
+- name: Configure nginx web root folder to pick html pages from our custom folder in Ubuntu
+  copy: src=default dest=/etc/nginx/sites-available/default
+  notify:
+  - Restart nginx service in Ubuntu ansible nodes
+

@@ -1,0 +1,9 @@
+---
+# handlers file for nginx
+- name: Restart nginx service in Ubuntu ansible nodes
+  when: ansible_distribution == "Ubuntu"
+  shell: service nginx restart
+
+- name: Restart nginx service in CentOS ansible nodes
+  when: ansible_distribution == "CentOS"
+  service: name=nginx state=restarted

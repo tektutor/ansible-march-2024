@@ -1,0 +1,7 @@
+- name: Disable firewall in CentOS 
+  service: name=firewalld state=stopped
+
+- name: Configure nginx web root folder to pick html pages from our custom folder in CentOS 
+  copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+  notify:
+  -  Restart nginx service in CentOS ansible nodes
