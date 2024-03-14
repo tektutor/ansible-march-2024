@@ -1,0 +1,5 @@
+- name: Demonstrates that service modules won't work in containers
+  hosts: ubuntu
+  tasks:
+  - name: Restart nginx service
+    service: name=nginx state=restarted

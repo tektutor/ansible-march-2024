@@ -1,0 +1,36 @@
+- name: This playbook will provision ubuntu and centos ansible node containers
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Install python package installer
+    when: ansible_distribution == "Ubuntu"
+    shell: apt install -y python3-pip
+
+  - name: Install docker python SDK
+    shell: pip install docker
+
+  - name: Delete all existing ubuntu and centos ansible node containers
+    shell: docker rm -f $(docker ps -qf "name=centos|ubuntu")
+    ignore_errors: yes
+
+  - name: Provision ubuntu ansible node containers
+    docker_container:
+      name: "ubuntu-{{item}}"
+      hostname: "ubuntu-{{item}}"
+      image: tektutor/ubuntu-ansible-node:latest
+      state: started 
+      ports:
+      - "8{{item}}:80"
+      - "2{{item}}:22"
+    with_sequence: start=1 end=10 format="%03d"
+
+  - name: Provision centos ansible node containers
+    docker_container:
+      name: "centos-{{item}}"
+      hostname: "centos-{{item}}"
+      image: tektutor/centos-ansible-node:latest
+      state: started 
+      ports:
+      - "9{{item}}:80"
+      - "3{{item}}:22"
+    with_sequence: start=1 end=10 format="%03d"
