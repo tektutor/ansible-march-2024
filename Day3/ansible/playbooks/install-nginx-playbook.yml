@@ -57,8 +57,8 @@
   hosts: localhost
   vars:
     urls:
-    - http://localhost:8001
-    - http://localhost:8002
+    - http://192.168.1.99:8001
+    - http://192.168.1.99:8002
   tasks:
   - name: Curl webpage
     shell: "curl {{item}}"
