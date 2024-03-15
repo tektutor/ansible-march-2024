@@ -10,5 +10,10 @@
 - name: Deploy custom web page
   template: src=index.html.j2 dest=/var/html/index.html
 
-- name: Start the nginx
+- name: Start the nginx in Ubuntu
+  when: ansible_distribution == "Ubuntu"
+  shell: service nginx start
+  
+- name: Start the nginx in Ubuntu
+  when: ansible_distribution == "Ubuntu"
   shell: service nginx start

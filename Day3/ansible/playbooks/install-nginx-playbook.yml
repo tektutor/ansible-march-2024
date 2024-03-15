@@ -1,5 +1,5 @@
 - name: This playbook will install nginx, configures the web root folder, deploys custom web page
-  hosts: rhel 
+  hosts: ubuntu  
   vars:
   - greeting_msg: Welcome to DevOps !!
   - provisioner_tool: Docker
@@ -8,10 +8,6 @@
   - name: Install nginx in Ubuntu ansible nodes
     when: ansible_distribution == "Ubuntu"
     apt: name=nginx state=latest update_cache=yes
-
-      #  - name: Install Extra Packages for Enterprise Linux (epel) in RHEL
-      #when: ansible_distribution == "RedHat"
-      #yum: name=epel-release state=latest
 
   - name: Install nginx in RHEL ansible nodes
     when: ansible_distribution == "RedHat"
