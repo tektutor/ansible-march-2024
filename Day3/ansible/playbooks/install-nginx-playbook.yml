@@ -52,3 +52,17 @@
   - name: Restart nginx service in RHEL ansible nodes
     when: ansible_distribution == "RedHat"
     service: name=nginx state=restarted
+
+- name: Test web page access
+  hosts: localhost
+  vars:
+    urls:
+    - http://localhost:8001
+    - http://localhost:8002
+  tasks:
+  - name: Curl webpage
+    shell: "curl {{item}}"
+    with_list: "{{urls}}"
+    register: output
+
+  - debug: var=output
