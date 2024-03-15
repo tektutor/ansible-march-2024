@@ -6,4 +6,5 @@
 
 - name: Restart nginx service in CentOS ansible nodes
   when: ansible_distribution == "CentOS"
-  service: name=nginx state=restarted
+ #service: name=nginx state=restarted
+  shell: service nginx restart
