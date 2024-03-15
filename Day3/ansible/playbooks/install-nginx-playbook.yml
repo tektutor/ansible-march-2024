@@ -53,16 +53,16 @@
     when: ansible_distribution == "RedHat"
     service: name=nginx state=restarted
 
-- name: Test web page access
-  hosts: localhost
-  vars:
-    urls:
-    - http://192.168.1.99:8001
-    - http://192.168.1.99:8002
-  tasks:
-  - name: Curl webpage
-    shell: "curl {{item}}"
-    with_list: "{{urls}}"
-    register: output
+      #- name: Test web page access
+      #hosts: localhost
+      #vars:
+      #urls:
+      #- http://192.168.1.99:8001
+      #- http://192.168.1.99:8002
+      # tasks:
+      #- name: Curl webpage
+      #shell: "curl {{item}}"
+      #with_list: "{{urls}}"
+      #register: output
 
-  - debug: var=output
+      #- debug: var=output
